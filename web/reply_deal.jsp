@@ -30,19 +30,38 @@
     ppstmt.setInt(5,0);
 
     connection.setAutoCommit(false);
-    statement.executeUpdate("update article set isleaf = 0 where id="+rootId);
+    statement.executeUpdate("update article set isleaf = 0 where id="+pid);
     ppstmt.executeUpdate();
     connection.commit();
     connection.setAutoCommit(true);
 
     DBUtil.close(ppstmt);
     DBUtil.close(connection);
+    //response.sendRedirect("article.jsp");
 %>
 <html>
 <head>
     <title>Title</title>
+    <script>
+
+        function delayURL(url) {
+            var time = document.getElementById("time").innerHTML;
+            if (time > 0) {
+                time--;
+                document.getElementById("time").innerHTML = time;
+            } else {
+                window.top.location.href = url;
+            }
+            setTimeout("delayURL('"+url+"')",1000);
+        }
+    </script>
 </head>
 <body>
-    <p>恭喜你回复完成！</p>
+    恭喜你回复完成！页面将在<span id="time">3</span>秒后跳转，如果不跳转请点击链接
+    <a href="article.jsp">主题列表</a>
+
+    <script>
+        delayURL("article.jsp");
+    </script>
 </body>
 </html>
