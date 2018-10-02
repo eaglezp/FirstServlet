@@ -1,9 +1,7 @@
 package com.eagle;
 
-import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
-@WebServlet("/abc")
 public class HelloWorldServlet extends javax.servlet.http.HttpServlet {
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
 
