@@ -31,6 +31,15 @@ public class DBUtil {
         return stmt;
     }
 
+    public static PreparedStatement createPptmt(Connection connection,String sql){
+        PreparedStatement ppstmt = null;
+        try {
+            ppstmt = connection.prepareStatement(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return ppstmt;
+    }
 
     public static ResultSet execQuery(Statement statement, String sql){
         ResultSet resultSet = null;

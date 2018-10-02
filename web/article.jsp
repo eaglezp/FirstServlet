@@ -139,22 +139,6 @@
               <td class="jive-last" nowrap="nowrap" width="1%"><div class="jive-last-post"><%= new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(article.getPdate())%><br>
                 by: <a href="http://bbs.chinajavaworld.com/thread.jspa?messageID=780182#780182" title="jingjiangjun" style="">eagle &#187;</a> </div></td>
             </tr>
-
-            <%--
-            <tr class="jive-odd">
-              <td class="jive-first" nowrap="nowrap" width="1%"><div class="jive-bullet"> <img src="images/read-16x16.gif" alt="已读" border="0" height="16" width="16">
-                <!-- div-->
-              </div></td>
-             <td nowrap="nowrap" width="1%">&nbsp;
-                &nbsp;</td>
-              <td class="jive-thread-name" width="95%"><a id="jive-thread-2" href="http://bbs.chinajavaworld.com/thread.jspa?threadID=744234&amp;tstart=25">请 兄弟们指点下那里 错误，，，</a></td>
-              <td class="jive-author" nowrap="nowrap" width="1%"><span class=""> <a href="http://bbs.chinajavaworld.com/profile.jspa?userID=226028">403783154</a> </span></td>
-              <td class="jive-view-count" width="1%"> 52</td>
-              <td class="jive-msg-count" width="1%"> 2</td>
-              <td class="jive-last" nowrap="nowrap" width="1%"><div class="jive-last-post"> 2007-9-13 上午8:40 <br>
-                by: <a href="http://bbs.chinajavaworld.com/thread.jspa?messageID=780172#780172" title="downing114" style="">downing114 &#187;</a> </div></td>
-            </tr>
-            --%>
             <%
                 }
             %>

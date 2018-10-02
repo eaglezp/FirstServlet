@@ -20,7 +20,7 @@
 
   Connection connection = DBUtil.getConn();
   Statement statement = connection.createStatement();
-  ResultSet resultSet = DBUtil.execQuery(statement,"select * from article where pid="+id);
+  ResultSet resultSet = DBUtil.execQuery(statement,"select * from article where id="+id);
   Article article = null;
   while (resultSet.next()){
     article = new Article();
@@ -39,7 +39,7 @@
     return;
   }
 %>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
 <html>
 <head>
   <title>Java|Java世界_中文论坛|ChinaJavaWorld技术论坛 : 初学java遇一难题！！望大家能帮忙一下 ...</title>
@@ -73,8 +73,8 @@
     <table summary="Buttons" border="0" cellpadding="0" cellspacing="0">
       <tbody>
       <tr>
-        <td class="jive-icon"><a href="http://bbs.chinajavaworld.com/post%21reply.jspa?threadID=744236"><img src="images/reply-16x16.gif" alt="回复本主题" border="0" height="16" width="16"></a></td>
-        <td class="jive-icon-label"><a id="jive-reply-thread" href="http://bbs.chinajavaworld.com/post%21reply.jspa?threadID=744236">回复本主题</a> </td>
+        <td class="jive-icon"><a href="reply.jsp?id=<%=article.getId()%>&rootId=<%=article.getRootId()%>"><img src="images/reply-16x16.gif" alt="回复本主题" border="0" height="16" width="16"></a></td>
+        <td class="jive-icon-label"><a id="jive-reply-thread" href="reply.jsp?id=<%=article.getId()%>&rootId=<%=article.getRootId()%>">回复本主题</a> </td>
       </tr>
       </tbody>
     </table>
