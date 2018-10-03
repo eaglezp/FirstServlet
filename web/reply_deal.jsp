@@ -27,7 +27,7 @@
     ppstmt.setInt(2, rootId);
     ppstmt.setString(3, title);
     ppstmt.setString(4,cont);
-    ppstmt.setInt(5,0);
+    ppstmt.setInt(5,1);
 
     connection.setAutoCommit(false);
     statement.executeUpdate("update article set isleaf = 0 where id="+pid);

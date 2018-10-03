@@ -41,6 +41,16 @@ public class DBUtil {
         return ppstmt;
     }
 
+    public static PreparedStatement createPptmt(Connection connection,String sql,int autoGenernatedKey){
+        PreparedStatement ppstmt = null;
+        try {
+            ppstmt = connection.prepareStatement(sql,autoGenernatedKey);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return ppstmt;
+    }
+
     public static ResultSet execQuery(Statement statement, String sql){
         ResultSet resultSet = null;
         try {

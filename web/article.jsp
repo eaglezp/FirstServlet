@@ -83,8 +83,8 @@
     <table summary="Buttons" border="0" cellpadding="0" cellspacing="0">
       <tbody>
       <tr>
-        <td class="jive-icon"><a href="http://bbs.chinajavaworld.com/post%21default.jspa?forumID=20"><img src="images/post-16x16.gif" alt="发表新主题" border="0" height="16" width="16"></a></td>
-        <td class="jive-icon-label"><a id="jive-post-thread" href="http://bbs.chinajavaworld.com/post%21default.jspa?forumID=20">发表新主题</a> <a href="http://bbs.chinajavaworld.com/forum.jspa?forumID=20&amp;isBest=1"></a></td>
+        <td class="jive-icon"><a href="post.jsp"><img src="images/post-16x16.gif" alt="发表新主题" border="0" height="16" width="16"></a></td>
+        <td class="jive-icon-label"><a id="jive-post-thread" href="post.jsp">发表新主题</a> <a href="http://bbs.chinajavaworld.com/forum.jspa?forumID=20&amp;isBest=1"></a></td>
       </tr>
       </tbody>
     </table>
