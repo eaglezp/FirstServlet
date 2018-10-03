@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="FirstServlet:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/web/article.jsp" line="29" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="db47105a-aedb-40d3-adb3-1a4307675932" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/FirstServlet_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e0a25c4f-d74e-49d7-a828-06714b0c7779.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Peng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FirstServlet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/eagle/class/com/eagle/entity/Article.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/eagle/class/com/eagle/util/DBUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/eagle/entity/Article.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/eagle/sql/bbs_init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/eagle/util/DBUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/article.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/article_detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/05-gold.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/06-double-gold.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/arrow-left-16x16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/avatar-display.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/bloginbbs.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/bloginbbs_data/blt_ars_black.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/feed-icon-16x16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/header-left.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/header-right.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/header-stretch.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/ico_best.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/key-16x16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/level1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/level11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/level16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/level3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/level8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/lock-16x16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/permlink-16x16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/poll-16x16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/poll-bar-16x16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/post-16x16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/preferences-16x16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/question-16x16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/question-pts-available-16x16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/question-resolved-16x16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/read-16x16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/reply-16x16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/search-16x16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/sigline.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/up-10x10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/post.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/reply.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/reply_deal.jsp" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL Connection" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL Connection" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL Connection" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="bbs: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL Connection" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="bbs: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="article: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1603316846">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.26" value="2" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="article" value="7" />
+          <entry key="gif" value="3" />
+          <entry key="htm" value="2" />
+          <entry key="html" value="3" />
+          <entry key="java" value="23" />
+          <entry key="js" value="1" />
+          <entry key="jsp" value="30" />
+          <entry key="md" value="1" />
+          <entry key="sql" value="3" />
+          <entry key="txt" value="1" />
+          <entry key="xml" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Database Element" value="7" />
+          <entry key="HTML" value="5" />
+          <entry key="Image" value="3" />
+          <entry key="JAVA" value="23" />
+          <entry key="JSP" value="30" />
+          <entry key="JavaScript" value="1" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="SQL" value="2" />
+          <entry key="Scratch" value="1" />
+          <entry key="XML" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cell" value="47" />
+          <entry key="java" value="907" />
+          <entry key="jsp" value="4982" />
+          <entry key="sql" value="31" />
+          <entry key="txt" value="178" />
+          <entry key="xml" value="62" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="907" />
+          <entry key="JSP" value="4982" />
+          <entry key="PLAIN_TEXT" value="178" />
+          <entry key="Scratch" value="78" />
+          <entry key="XML" value="62" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="FirstServlet" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/article.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/post.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="798">
+              <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/reply.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/article_detail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1365">
+              <caret line="65" column="165" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="165" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://e0a25c4f-d74e-49d7-a828-06714b0c7779/schema/bbs/table/article">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/reply_deal.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="609">
+              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>主</find>
+      <find>回</find>
+      <find>首</find>
+      <find>发</find>
+      <find>rootId</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web/WEB-INF/article.jsp" />
+        <option value="$PROJECT_DIR$/src/com/eagle/HelloWorldServlet.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/DBUtil.java" />
+        <option value="$PROJECT_DIR$/web/article_detail2.jsp" />
+        <option value="$PROJECT_DIR$/src/com/eagle/entity/Article.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e0a25c4f-d74e-49d7-a828-06714b0c7779/console.sql" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/article_detail.jsp" />
+        <option value="$PROJECT_DIR$/web/reply.jsp" />
+        <option value="$PROJECT_DIR$/web/article.jsp" />
+        <option value="$PROJECT_DIR$/src/com/eagle/util/DBUtil.java" />
+        <option value="$PROJECT_DIR$/web/reply_deal.jsp" />
+        <option value="$PROJECT_DIR$/web/post.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpellCheckingInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FirstServlet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstServlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstServlet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstServlet" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SearchEverywhereHistoryKey" value="images&#9;PSI&#9;JAVA://com.sun.javafx.tk.quantum.PrismImageLoader2#images" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538533534466" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\workspace\FirstServlet\web" />
+      <recent name="D:\Java\workspace\FirstServlet\src\com\eagle\fckeditor" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\workspace\FirstServlet\src\com\eagle\sql" />
+      <recent name="D:\Java\workspace\FirstServlet\web" />
+      <recent name="D:\Java\workspace\FirstServlet\web\images" />
+      <recent name="D:\Java\workspace\FirstServlet\web\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat9.0.12">
+    <configuration name="DBUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.eagle.util.DBUtil" />
+      <module name="FirstServlet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eagle.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat9.0.12" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="FirstServlet:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/FirstServlet" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_FirstServlet" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="4518" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="FirstServlet:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="FirstServlet:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_FirstServlet" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="4518" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="FirstServlet:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Tomcat9.0.12" />
+      <item itemvalue="Application.DBUtil" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DBUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db47105a-aedb-40d3-adb3-1a4307675932" name="Default Changelist" comment="" />
+      <created>1538391128214</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1538391128214</updated>
+      <workItem from="1538391133182" duration="5588000" />
+      <workItem from="1538416139763" duration="906000" />
+      <workItem from="1538419205087" duration="7748000" />
+      <workItem from="1538427143533" duration="10434000" />
+      <workItem from="1538472418035" duration="12849000" />
+      <workItem from="1538487397489" duration="24877000" />
+      <workItem from="1538515235834" duration="11020000" />
+      <workItem from="1538532299612" duration="1562000" />
+    </task>
+    <task id="LOCAL-00001" summary="完整的servlet项目。">
+      <created>1538392588150</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538392588150</updated>
+    </task>
+    <task id="LOCAL-00002" summary="使用注解@WebServlet(&quot;/abc&quot;)标识Servlet服务类">
+      <created>1538394289692</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1538394289692</updated>
+    </task>
+    <task id="LOCAL-00003" summary="bbs项目，展示帖子列表，及详情页。">
+      <created>1538481147257</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1538481147257</updated>
+    </task>
+    <task id="LOCAL-00004" summary="新增回复，和回复处理。&#10;&#10;&#10;Updated By ZP On 2018-10-02 22:44">
+      <created>1538491546519</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538491546519</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated By ZP On 2018-10-03 06:56&#10;新增回复成功页面跳转。">
+      <created>1538510249857</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1538510249857</updated>
+    </task>
+    <task id="LOCAL-00006" summary="新增发贴页面。&#10;Updated By ZP On 2018-10-03 09:23">
+      <created>1538529820104</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1538529820104</updated>
+    </task>
+    <task id="LOCAL-00007" summary="新增发贴页面。&#10;Updated By ZP On 2018-10-03 09:23">
+      <created>1538532422122</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1538532422122</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="74984000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.25113463" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" weight="0.32980332" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" sideWeight="0.502439" side_tool="true" weight="0.24962178" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.50163937" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49924356" weight="0.44918033" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32786885" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49848714" weight="0.32786885" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015129" side_tool="true" weight="0.32786885" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3295082" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3295082" />
+      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.3295082" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3295082" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.6590164" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.21709532" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" weight="0.2473525" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" weight="0.32980332" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" sideWeight="0.502439" side_tool="true" weight="0.24962178" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.50163937" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49924356" visible="true" weight="0.44918033" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32786885" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49848714" weight="0.32786885" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015129" side_tool="true" weight="0.32786885" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3295082" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3295082" />
+      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.3295082" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3295082" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.6590164" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.21709532" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="完整的servlet项目。" />
+    <MESSAGE value="使用注解@WebServlet(&quot;/abc&quot;)标识Servlet服务类" />
+    <MESSAGE value="bbs项目，展示帖子列表，及详情页。" />
+    <MESSAGE value="新增回复，和回复处理。&#10;&#10;&#10;Updated By ZP On 2018-10-02 22:44" />
+    <MESSAGE value="Updated By ZP On 2018-10-03 06:56&#10;新增回复成功页面跳转。" />
+    <MESSAGE value="新增发贴页面。&#10;Updated By ZP On 2018-10-03 09:23" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增发贴页面。&#10;Updated By ZP On 2018-10-03 09:23" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="126">
+            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/article.htm" />
+    <entry file="file://$PROJECT_DIR$/web/images/05-gold.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/ico_best.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/images/header-stretch.gif" />
+    <entry file="file://$PROJECT_DIR$/src/DBUtil.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/javafx-src.zip!/com/sun/javafx/tk/quantum/PrismImageLoader2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e0a25c4f-d74e-49d7-a828-06714b0c7779/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="95" selection-start-line="2" selection-start-column="95" selection-end-line="2" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/bloginbbs.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/eagle/HelloWorldServlet.java" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/eagle/entity/Article.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#1168#1169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/eagle/sql/bbs_init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="48" column="28" lean-forward="true" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/fckeditor/_samples/html/sample02.html" />
+    <entry file="file://$PROJECT_DIR$/web/fckeditor/fckeditor.js" />
+    <entry file="file://$PROJECT_DIR$/../../bbs/test.txt" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/eagle/util/DBUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/sql/Statement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="715" column="14" selection-start-line="715" selection-start-column="14" selection-end-line="715" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="292" column="47" lean-forward="true" selection-start-line="292" selection-start-column="46" selection-end-line="292" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/article.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/post.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/reply.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/article_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="65" column="165" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e0a25c4f-d74e-49d7-a828-06714b0c7779/schema/bbs/table/article">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/reply_deal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>FirstServlet:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>FirstServlet</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>servlet-api</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
