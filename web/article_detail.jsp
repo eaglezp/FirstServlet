@@ -7,7 +7,8 @@
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-  String idstr = request.getParameter("id");
+
+   String idstr = request.getParameter("id");
   String rootId = request.getParameter("rootId");
   String title = request.getParameter("title");
   if(idstr == null || idstr.trim().equals("")){
@@ -28,13 +29,7 @@
   List<Article> articleList = new ArrayList<Article>();
   while(resultSet.next()) {
     Article article = new Article();
-    article.setId(resultSet.getInt("id"));
-    article.setPid(resultSet.getInt("pid"));
-    article.setRootId(resultSet.getInt("rootId"));
-    article.setTitle(resultSet.getString("title"));
-    article.setPdate(resultSet.getTimestamp("pdate"));
-    article.setCont(resultSet.getString("cont"));
-    article.setLeaf(resultSet.getInt("isleaf") != 0 ? true : false);
+    article.initFromRs(resultSet);
     articleList.add(article);
   }
 
@@ -77,8 +72,8 @@
     <table summary="Buttons" border="0" cellpadding="0" cellspacing="0">
       <tbody>
       <tr>
-        <td class="jive-icon"><a href="reply.jsp?id=<%=id%>&rootId=<%=rootId%>"><img src="images/reply-16x16.gif" alt="回复本主题" border="0" height="16" width="16"></a></td>
-        <td class="jive-icon-label"><a id="jive-reply-thread" href="reply.jsp?id=<%=id%>&rootId=<%=rootId%>">回复本主题</a> </td>
+        <td class="jive-icon"><a href="reply.jsp?id=<%=id%>&rootId=<%=rootId%>&title=<%=title%>"><img src="images/reply-16x16.gif" alt="回复本主题" border="0" height="16" width="16"></a></td>
+        <td class="jive-icon-label"><a id="jive-reply-thread" href="reply.jsp?id=<%=id%>&rootId=<%=rootId%>&title=<%=title%>">回复本主题</a> </td>
       </tr>
       </tbody>
     </table>
@@ -149,6 +144,7 @@
                     </tr>
                     <tr>
                       <td colspan="4" style="border-top: 1px solid rgb(204, 204, 204);"><br>
+
                          <%=article.getCont()%><br>
                         <br>
                       </td>
@@ -160,7 +156,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td colspan="4" style="border-top: 1px solid rgb(204, 204, 204); font-size: 9pt; table-layout: fixed;"> ·<a href="http://www.bjsxt.com"><font color="#666666">http://www.bjsxt.com</font></a> </td>
+                      <td colspan="4" style="border-top: 1px solid rgb(204, 204, 204); font-size: 9pt; table-layout: fixed;"><a href="http://www.bjsxt.com"><font color="#666666">http://www.bjsxt.com</font></a> </td>
                     </tr>
                     </tbody>
                   </table></td>
@@ -182,7 +178,7 @@
               <td align="center" width="98%"><table border="0" cellpadding="0" cellspacing="0">
                 <tbody>
                 <tr>
-                    <td><a href="<%=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()%>/article_falt.jsp"><img src="images/arrow-left-16x16.gif" alt="返回到主题列表" border="0" height="16" hspace="6" width="16"></a> </td>
+                    <td><a href="<%=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()%>/article_flat.jsp"><img src="images/arrow-left-16x16.gif" alt="返回到主题列表" border="0" height="16" hspace="6" width="16"></a> </td>
                     <td><a href="<%=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()%>/article_flat.jsp">返回到主题列表</a> </td>
                 </tr>
                 </tbody>

@@ -10,12 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db47105a-aedb-40d3-adb3-1a4307675932" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/article_flat.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/FirstServlet_war_exploded/article_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FirstServlet_war_exploded/article_detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/FirstServlet_war_exploded/reply.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FirstServlet_war_exploded/reply.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/FirstServlet_war_exploded/reply_deal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FirstServlet_war_exploded/reply_deal.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/article_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/article_detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/article_flat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/article_flat.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/post.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/post.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/reply.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/reply.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/reply_deal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/reply_deal.jsp" afterDir="false" />
     </list>
@@ -87,9 +85,9 @@
           <entry key="htm" value="2" />
           <entry key="html" value="3" />
           <entry key="iml" value="1" />
-          <entry key="java" value="24" />
+          <entry key="java" value="25" />
           <entry key="js" value="1" />
-          <entry key="jsp" value="40" />
+          <entry key="jsp" value="42" />
           <entry key="md" value="1" />
           <entry key="sql" value="3" />
           <entry key="txt" value="1" />
@@ -102,8 +100,8 @@
           <entry key="HTML" value="5" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="3" />
-          <entry key="JAVA" value="24" />
-          <entry key="JSP" value="40" />
+          <entry key="JAVA" value="25" />
+          <entry key="JSP" value="42" />
           <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -116,17 +114,17 @@
         <counts>
           <entry key="cell" value="47" />
           <entry key="java" value="907" />
-          <entry key="jsp" value="5956" />
+          <entry key="jsp" value="6205" />
           <entry key="sql" value="31" />
-          <entry key="txt" value="178" />
+          <entry key="txt" value="196" />
           <entry key="xml" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="907" />
-          <entry key="JSP" value="5956" />
-          <entry key="PLAIN_TEXT" value="178" />
+          <entry key="JSP" value="6205" />
+          <entry key="PLAIN_TEXT" value="196" />
           <entry key="Scratch" value="78" />
           <entry key="XML" value="62" />
         </counts>
@@ -141,8 +139,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/article_detail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="135" column="76" selection-start-line="135" selection-start-column="76" selection-end-line="135" selection-end-column="76" />
+            <state relative-caret-position="219">
+              <caret line="180" column="152" selection-start-line="180" selection-start-column="152" selection-end-line="180" selection-end-column="152" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/article.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -150,8 +160,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/reply.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="48" column="52" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="52" />
+            <state relative-caret-position="-525">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -159,8 +169,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/reply_deal.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="67" column="82" selection-start-line="67" selection-start-column="82" selection-end-line="67" selection-end-column="82" />
+            <state relative-caret-position="106">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -168,8 +178,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/article_flat.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="107" column="34" lean-forward="true" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
+            <state relative-caret-position="273">
+              <caret line="107" column="146" selection-start-line="107" selection-start-column="146" selection-end-line="107" selection-end-column="146" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/post.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-105">
+              <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/eagle/entity/Article.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="108" column="15" lean-forward="true" selection-start-line="108" selection-start-column="15" selection-end-line="108" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#664#665#0" expanded="true" />
+                <element signature="e#693#694#0" expanded="true" />
+                <element signature="e#1134#1135#0" expanded="true" />
+                <element signature="e#1168#1169#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,6 +227,7 @@
       <find>发</find>
       <find>rootId</find>
       <find>odd</find>
+      <find>title</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -211,9 +247,9 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/article.jsp" />
         <option value="$PROJECT_DIR$/src/com/eagle/util/DBUtil.java" />
-        <option value="$PROJECT_DIR$/web/post.jsp" />
         <option value="$PROJECT_DIR$/web/article_flat.jsp" />
         <option value="$PROJECT_DIR$/web/reply.jsp" />
+        <option value="$PROJECT_DIR$/web/post.jsp" />
         <option value="$PROJECT_DIR$/web/reply_deal.jsp" />
         <option value="$PROJECT_DIR$/web/article_detail.jsp" />
       </list>
@@ -285,7 +321,7 @@
     <property name="SearchEverywhereHistoryKey" value="images&#9;PSI&#9;JAVA://com.sun.javafx.tk.quantum.PrismImageLoader2#images" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538645406925" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538649274945" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -293,7 +329,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -505,7 +541,7 @@
       <workItem from="1538515235834" duration="11020000" />
       <workItem from="1538532299612" duration="2523000" />
       <workItem from="1538631722543" duration="9822000" />
-      <workItem from="1538644501623" duration="876000" />
+      <workItem from="1538644501623" duration="4751000" />
     </task>
     <task id="LOCAL-00001" summary="完整的servlet项目。">
       <created>1538392588150</created>
@@ -563,11 +599,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538533891552</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="更新首页更改平板显示。&#10;Updated By ZP On 2018-10-04 17:32">
+      <created>1538645556875</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1538645556875</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86643000" />
+    <option name="totallyTimeSpent" value="90518000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -582,7 +625,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.15355521" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.15355521" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -595,7 +638,7 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.50163937" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49924356" weight="0.41311476" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49924356" weight="0.32786885" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32786885" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49848714" weight="0.32786885" />
@@ -673,7 +716,9 @@
     <MESSAGE value="新增回复，和回复处理。&#10;&#10;&#10;Updated By ZP On 2018-10-02 22:44" />
     <MESSAGE value="Updated By ZP On 2018-10-03 06:56&#10;新增回复成功页面跳转。" />
     <MESSAGE value="新增发贴页面。&#10;Updated By ZP On 2018-10-03 09:23" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增发贴页面。&#10;Updated By ZP On 2018-10-03 09:23" />
+    <MESSAGE value="更新首页更改平板显示。&#10;Updated By ZP On 2018-10-03 09:23" />
+    <MESSAGE value="更新首页更改平板显示。&#10;Updated By ZP On 2018-10-04 17:32" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新首页更改平板显示。&#10;Updated By ZP On 2018-10-04 17:32" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -776,10 +821,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://e0a25c4f-d74e-49d7-a828-06714b0c7779/schema/bbs/table/article">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/eagle/entity/Article.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
+        <state relative-caret-position="375">
+          <caret line="108" column="15" lean-forward="true" selection-start-line="108" selection-start-column="15" selection-end-line="108" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#664#665#0" expanded="true" />
@@ -790,52 +842,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://e0a25c4f-d74e-49d7-a828-06714b0c7779/schema/bbs/table/article">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/post.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/article.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2254">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="-105">
+          <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/article_flat.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="107" column="34" lean-forward="true" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
+        <state relative-caret-position="273">
+          <caret line="107" column="146" selection-start-line="107" selection-start-column="146" selection-end-line="107" selection-end-column="146" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/reply.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="48" column="52" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="52" />
+        <state relative-caret-position="-525">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/reply_deal.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="67" column="82" selection-start-line="67" selection-start-column="82" selection-end-line="67" selection-end-column="82" />
+        <state relative-caret-position="106">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/article.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/article_detail.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="135" column="76" selection-start-line="135" selection-start-column="76" selection-end-line="135" selection-end-column="76" />
+        <state relative-caret-position="219">
+          <caret line="180" column="152" selection-start-line="180" selection-start-column="152" selection-end-line="180" selection-end-column="152" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

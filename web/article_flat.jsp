@@ -17,13 +17,7 @@
     articleList = new ArrayList<Article>();
     while(resultSet.next()) {
         Article article = new Article();
-        article.setId(resultSet.getInt("id"));
-        article.setPid(resultSet.getInt("pid"));
-        article.setRootId(resultSet.getInt("rootId"));
-        article.setTitle(resultSet.getString("title"));
-        article.setPdate(resultSet.getTimestamp("pdate"));
-        article.setCont(resultSet.getString("cont"));
-        article.setLeaf(resultSet.getInt("isleaf") != 0 ? true : false);
+        article.initFromRs(resultSet);
         articleList.add(article);
     }
     DBUtil.close(connection);

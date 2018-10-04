@@ -9,6 +9,7 @@
 <%
     int id = Integer.parseInt(request.getParameter("id"));
     int rootId = Integer.parseInt(request.getParameter("rootId"));
+    String title = request.getParameter("title");
 %>
 <html>
 <head>
@@ -47,8 +48,9 @@
                     <div class="jive-table">
                         <div class="jive-messagebox">
                             <form action="reply_deal.jsp" method="post">
-                                <input type="hidden" name="pid" value="<%=id%>">
-                                <input type="hidden" name="rootId" value="<%=rootId%>">
+                                <input type="hidden" name="pid" value="<%=id%>"/>
+                                <input type="hidden" name="rootId" value="<%=rootId%>"/>
+                                <input type="hidden" name="ptitle" value="<%=title%>"/>
                                 标题：<input type="text" name="title"/><br>
                                 内容：<textarea rows="15" cols="80" name="cont"></textarea><br>
                                 <input type="submit" value="提交">

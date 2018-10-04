@@ -13,6 +13,8 @@
     int pid = Integer.parseInt(request.getParameter("pid"));
     int rootId = Integer.parseInt(request.getParameter("rootId"));
 
+    String ptitle = new String(request.getParameter("ptitle").getBytes("ISO8859-1"),"UTF-8");
+    System.out.println("ptitle:"+ptitle);
     //request.setCharacterEncoding("utf-8");
 
     String title = new String(request.getParameter("title").getBytes("ISO8859-1"),"UTF-8");
@@ -65,7 +67,7 @@
     <script>
         /*delayURL("article.jsp");*/
         <!--平板展示-->
-        delayURL("article_detail.jsp?id=<%=pid%>&rootId=<%=rootId%>&title=<%=title%>");
+        delayURL("article_detail.jsp?id=<%=pid%>&title=<%=ptitle%>");
     </script>
 </body>
 </html>
