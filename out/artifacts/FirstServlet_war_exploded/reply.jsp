@@ -9,6 +9,7 @@
 <%
     int id = Integer.parseInt(request.getParameter("id"));
     int rootId = Integer.parseInt(request.getParameter("rootId"));
+    String title = request.getParameter("title");
 %>
 <html>
 <head>
@@ -47,8 +48,9 @@
                     <div class="jive-table">
                         <div class="jive-messagebox">
                             <form action="reply_deal.jsp" method="post">
-                                <input type="hidden" name="pid" value="<%=id%>">
-                                <input type="hidden" name="rootId" value="<%=rootId%>">
+                                <input type="hidden" name="pid" value="<%=id%>"/>
+                                <input type="hidden" name="rootId" value="<%=rootId%>"/>
+                                <input type="hidden" name="ptitle" value="<%=title%>"/>
                                 标题：<input type="text" name="title"/><br>
                                 内容：<textarea rows="15" cols="80" name="cont"></textarea><br>
                                 <input type="submit" value="提交">
@@ -68,7 +70,7 @@
                                     <td><a href="<%=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()%>/article.jsp">返回到主题列表</a> </td>--%>
 
                                     <!--平板展示-->
-                                    <td><a href="<%=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()%>/article_falt.jsp"><img src="images/arrow-left-16x16.gif" alt="返回到主题列表" border="0" height="16" hspace="6" width="16"></a> </td>
+                                    <td><a href="<%=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()%>/article_flat.jsp"><img src="images/arrow-left-16x16.gif" alt="返回到主题列表" border="0" height="16" hspace="6" width="16"></a> </td>
                                     <td><a href="<%=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()%>/article_flat.jsp">返回到主题列表</a> </td>
                                 </tr>
                                 </tbody>

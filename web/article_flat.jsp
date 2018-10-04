@@ -9,17 +9,40 @@
 <%@page pageEncoding="utf-8"%>
 
 <%
+    int pageNum = 1;
+    final int PAGE_SIZE = 10;
+    String startPageNum = request.getParameter("pageNum");
+    if(startPageNum != null && !startPageNum.equals("")){
+        try {
+            pageNum = Integer.parseInt(startPageNum);
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+            pageNum = 1;
+        }
+    }
+    if(pageNum <= 0){
+        pageNum = 1;
+    }
+
     List<Article> articleList = new ArrayList<Article>();
-
     Connection connection = DBUtil.getConn();
+    ResultSet totalResultSet = DBUtil.createStmt(connection).executeQuery("select count(*) from article where pid=0");
+    totalResultSet.next();
+    int totalCount = totalResultSet.getInt(1);
 
-    ResultSet resultSet = DBUtil.createStmt(connection).executeQuery("select * from article where pid=0");
-    articleList = new ArrayList<Article>();
+    int totalPages = (totalCount + PAGE_SIZE - 1) / PAGE_SIZE;
+
+    pageNum = pageNum > totalPages ? totalPages : pageNum;
+    int startPos = (pageNum - 1) * PAGE_SIZE;
+    String sql = "select * from article where pid = 0 order by pdate desc limit "+startPos+", "+PAGE_SIZE;
+    ResultSet resultSet = DBUtil.execQuery(DBUtil.createStmt(connection),sql);
+    System.out.println("sql:"+sql);
     while(resultSet.next()) {
         Article article = new Article();
         article.initFromRs(resultSet);
         articleList.add(article);
     }
+
     DBUtil.close(connection);
 %>
 
@@ -61,7 +84,7 @@
       <tbody>
       <tr>
         <td class="jive-icon"><a href="post.jsp"><img src="images/post-16x16.gif" alt="发表新主题" border="0" height="16" width="16"></a></td>
-        <td class="jive-icon-label"><a id="jive-post-thread" href="post.jsp">发表新主题</a> <a href="http://bbs.chinajavaworld.com/forum.jspa?forumID=20&amp;isBest=1"></a></td>
+        <td class="jive-icon-label"><a id="jive-post-thread" href="post.jsp">发表新主题</a> <a href=""></a></td>
       </tr>
       </tbody>
     </table>
@@ -70,8 +93,16 @@
   <table border="0" cellpadding="3" cellspacing="0" width="100%">
     <tbody>
     <tr valign="top">
-      <td><span class="nobreak"> 页:
-          1,316 - <span class="jive-paginator"> [ <a href="http://bbs.chinajavaworld.com/forum.jspa?forumID=20&amp;start=0&amp;isBest=0">上一页</a> | <a href="http://bbs.chinajavaworld.com/forum.jspa?forumID=20&amp;start=0&amp;isBest=0" class="">1</a> <a href="http://bbs.chinajavaworld.com/forum.jspa?forumID=20&amp;start=25&amp;isBest=0" class="jive-current">2</a> <a href="http://bbs.chinajavaworld.com/forum.jspa?forumID=20&amp;start=50&amp;isBest=0" class="">3</a> <a href="http://bbs.chinajavaworld.com/forum.jspa?forumID=20&amp;start=75&amp;isBest=0" class="">4</a> <a href="http://bbs.chinajavaworld.com/forum.jspa?forumID=20&amp;start=100&amp;isBest=0" class="">5</a> <a href="http://bbs.chinajavaworld.com/forum.jspa?forumID=20&amp;start=125&amp;isBest=0" class="">6</a> | <a href="http://bbs.chinajavaworld.com/forum.jspa?forumID=20&amp;start=50&amp;isBest=0">下一页</a> ] </span> </span> </td>
+      <td>
+          <span class="nobreak">
+              <span class="jive-paginator"> [
+                  <a href="<%=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()%>/article_flat.jsp?pageNum=1">首页</a> |
+                  <a href="<%=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()%>/article_flat.jsp?pageNum=<%=pageNum-1%>">上一页</a> |
+                  <a href="<%=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()%>/article_flat.jsp?pageNum=<%=pageNum+1%>">下一页</a> |
+                  <a href="<%=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()%>/article_flat.jsp?pageNum=<%=totalPages%>">尾页</a> ]
+              </span>
+          </span>
+      </td>
     </tr>
     </tbody>
   </table>
@@ -95,11 +126,13 @@
             <tbody>
 
             <%
-                for (Iterator<Article> iterator = articleList.iterator(); ((Iterator) iterator).hasNext();) {
+                int i=0;
+                for (Iterator<Article> iterator = articleList.iterator(); ((Iterator) iterator).hasNext(); i++) {
                     Article a= iterator.next();
+                    String lineclass = i % 2 == 0 ? "jive-even" : "jive-odd";
             %>
 
-            <tr class="jive-even">
+            <tr class="<%=lineclass%>">
               <td class="jive-first" nowrap="nowrap" width="1%"><div class="jive-bullet"> <img src="images/read-16x16.gif" alt="已读" border="0" height="16" width="16">
                 <!-- div-->
               </div></td>

@@ -87,14 +87,14 @@
           <div class="jive-table">
             <div class="jive-messagebox">
               <%
-                  for(int i=0; i<articleList.size();i++){
+                  for(int i=0; i<articleList.size(); i++){
                       Article article = articleList.get(i);
                       String floor = i == 0 ? "楼主" : i+"楼";
               %>
               <!--start-->
               <table summary="Message" border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tbody>
-                <tr id="jive-message-780144" class="jive-odd" valign="top">
+                <tr id="jive-message-780144" class="java-odd" valign="top">
                   <td class="jive-first" width="1%">
 
                     <!-- 个人信息的table -->
