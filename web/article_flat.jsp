@@ -6,7 +6,16 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.sql.SQLException" %>
 <%@page pageEncoding="utf-8" %>
+
+<%
+    boolean logined = false;
+    String admingLogined = (String) session.getAttribute("adminLogined");
+    if(admingLogined != null && admingLogined.equals("true")){
+        logined = true;
+    }
+%>
 
 <%
     int pageNum = 1;
@@ -26,7 +35,12 @@
 
     List<Article> articleList = new ArrayList<Article>();
     Connection connection = DBUtil.getConn();
-    ResultSet totalResultSet = DBUtil.createStmt(connection).executeQuery("select count(*) from article where pid=0");
+    ResultSet totalResultSet = null;
+    try {
+        totalResultSet = DBUtil.createStmt(connection).executeQuery("select count(1) from article where pid=0");
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
     totalResultSet.next();
     int totalCount = totalResultSet.getInt(1);
 
@@ -150,8 +164,29 @@
                                         <!-- div-->
                                     </div>
                                 </td>
-                                <td nowrap="nowrap" width="1%">&nbsp;
-                                    &nbsp;
+                                <td nowrap="nowrap" width="1%">
+
+                                <%
+                                    StringBuffer url = request.getRequestURL();
+                                    String param = request.getQueryString();
+                                    System.out.println("param:"+param);
+                                    if(param != null && !param.equals("")){
+                                        url = url.append("?").append(param);
+                                    }
+                                    System.out.println("param:"+param);
+                                %>
+                                <%
+                                    if(logined){
+
+                                            if(logined){
+                                        %>
+                                                <a href="article_delete.jsp?id=<%=a.getId()%>&isleaf=<%=a.isLeaf()%>&pid=<%=a.getPid()%>&from=<%=url%>">DEL</a>
+                                        <%
+                                            }
+                                        %>
+                                    <%
+                                    }
+                                    %>
                                 </td>
                                 <td class="jive-thread-name" width="95%"><a id="jive-thread-1"
                                                                             href="article_detail.jsp?id=<%=a.getId()%>&rootId=<%=a.getRootId()%>&title=<%=a.getTitle()%>"><%= a.getTitle()%>

@@ -4,6 +4,7 @@
 <%@ page import="com.eagle.util.DBUtil" %>
 <%@ page import="java.sql.Statement" %>
 <%@page pageEncoding="utf-8" %>
+<%@include file="_session_check.jsp"%>
 <%!
     public void deleteArticle(Connection conn, int id, boolean isLeaf) {
         if(!isLeaf){
@@ -66,7 +67,6 @@
             e.printStackTrace();
         }
     }
-
-
+    String url = request.getParameter("from");
+    response.sendRedirect(url);
 %>
-congratulations!

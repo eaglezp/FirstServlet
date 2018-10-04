@@ -8,7 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     int id = Integer.parseInt(request.getParameter("id"));
-    int rootId = Integer.parseInt(request.getParameter("rootId"));
+    String rootIdStr = request.getParameter("rootId");
+    int rootId = 0;
+    if(rootIdStr != null && !rootIdStr.equals("")){
+        rootId = Integer.parseInt(rootIdStr);
+    }
     String title = request.getParameter("title");
 %>
 <html>

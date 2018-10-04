@@ -161,7 +161,15 @@
                                     </div>
                                 </td>
                                 <td nowrap="nowrap" width="1%">
-                                    <a href="article_delete.jsp?id=<%=article.getId()%>&isleaf=<%=article.isLeaf()%>&pid=<%=article.getPid()%>">DEL</a>
+                                    <%
+                                        StringBuffer url = request.getRequestURL();
+                                        String param = request.getQueryString();
+                                        System.out.println("param:"+param);
+                                        if(param != null && !param.equals("")){
+                                            url = url.append("?").append(param);
+                                        }
+                                    %>
+                                    <a href="article_delete.jsp?id=<%=article.getId()%>&isleaf=<%=article.isLeaf()%>&pid=<%=article.getPid()%>&from=<%=url%>">DEL</a>
                                 </td>
                                 <td class="jive-thread-name" width="95%"><a id="jive-thread-1"
                                                                             href="article_detail.jsp?id=<%=article.getId()%>"><%= string + article.getTitle()%>
