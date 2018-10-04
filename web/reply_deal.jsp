@@ -58,10 +58,14 @@
 </head>
 <body>
     恭喜你回复完成！页面将在<span id="time">3</span>秒后跳转，如果不跳转请点击链接
-    <a href="article.jsp">主题列表</a>
+    <%--<a href="article.jsp">主题列表</a>--%>
+    <!--平板展示-->
+    <a href="article_flat.jsp">主题列表</a>
 
     <script>
-        delayURL("article.jsp");
+        /*delayURL("article.jsp");*/
+        <!--平板展示-->
+        delayURL("article_detail.jsp?id=<%=pid%>&rootId=<%=rootId%>&title=<%=title%>");
     </script>
 </body>
 </html>

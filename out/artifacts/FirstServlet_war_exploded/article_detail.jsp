@@ -3,9 +3,13 @@
 <%@ page import="java.sql.Statement" %>
 <%@ page import="java.sql.ResultSet" %>
 <%@ page import="com.eagle.entity.Article" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
   String idstr = request.getParameter("id");
+  String rootId = request.getParameter("rootId");
+  String title = request.getParameter("title");
   if(idstr == null || idstr.trim().equals("")){
     /*out.println("Error ID !");*/
     return;
@@ -20,25 +24,25 @@
 
   Connection connection = DBUtil.getConn();
   Statement statement = connection.createStatement();
-  ResultSet resultSet = DBUtil.execQuery(statement,"select * from article where id="+id);
-  Article article = null;
-  while (resultSet.next()){
-    article = new Article();
-    article.initFromRs(resultSet);
+  ResultSet resultSet = DBUtil.execQuery(statement,"select * from article where pid="+id);
+  List<Article> articleList = new ArrayList<Article>();
+  while(resultSet.next()) {
+    Article article = new Article();
+    article.setId(resultSet.getInt("id"));
+    article.setPid(resultSet.getInt("pid"));
+    article.setRootId(resultSet.getInt("rootId"));
+    article.setTitle(resultSet.getString("title"));
+    article.setPdate(resultSet.getTimestamp("pdate"));
+    article.setCont(resultSet.getString("cont"));
+    article.setLeaf(resultSet.getInt("isleaf") != 0 ? true : false);
+    articleList.add(article);
   }
 
   DBUtil.close(resultSet);
   DBUtil.close(statement);
   DBUtil.close(connection);
-
-  if(article == null){
 %>
-    你寻找的帖子不存在！
 
-<%
-    return;
-  }
-%>
 
 <html>
 <head>
@@ -63,8 +67,8 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tbody>
     <tr valign="top">
-      <td width="99%"><p class="jive-breadcrumbs"> <a href="<%=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()%>/article.jsp">首页</a> &#187; <a href="http://bbs.chinajavaworld.com/forumindex.jspa?categoryID=1">ChinaJavaWorld技术论坛|Java世界_中文论坛</a> &#187; <a href="http://bbs.chinajavaworld.com/category.jspa?categoryID=2">Java 2 Platform, Standard Edition (J2SE)</a> &#187; <a href="http://bbs.chinajavaworld.com/forum.jspa?forumID=20&amp;start=0">Java语言*初级版</a> </p>
-        <p class="jive-page-title"> 主题:<%=article.getTitle()%></p></td>
+      <td width="99%"><p class="jive-breadcrumbs"> <a href="<%=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()%>/article_flat.jsp">首页</a> &#187; <a href="http://bbs.chinajavaworld.com/forumindex.jspa?categoryID=1">ChinaJavaWorld技术论坛|Java世界_中文论坛</a> &#187; <a href="http://bbs.chinajavaworld.com/category.jspa?categoryID=2">Java 2 Platform, Standard Edition (J2SE)</a> &#187; <a href="http://bbs.chinajavaworld.com/forum.jspa?forumID=20&amp;start=0">Java语言*初级版</a> </p>
+        <p class="jive-page-title"> 主题:<%=title%></p></td>
       <td width="1%"><div class="jive-accountbox"></div></td>
     </tr>
     </tbody>
@@ -73,8 +77,8 @@
     <table summary="Buttons" border="0" cellpadding="0" cellspacing="0">
       <tbody>
       <tr>
-        <td class="jive-icon"><a href="reply.jsp?id=<%=article.getId()%>&rootId=<%=article.getRootId()%>"><img src="images/reply-16x16.gif" alt="回复本主题" border="0" height="16" width="16"></a></td>
-        <td class="jive-icon-label"><a id="jive-reply-thread" href="reply.jsp?id=<%=article.getId()%>&rootId=<%=article.getRootId()%>">回复本主题</a> </td>
+        <td class="jive-icon"><a href="reply.jsp?id=<%=id%>&rootId=<%=rootId%>"><img src="images/reply-16x16.gif" alt="回复本主题" border="0" height="16" width="16"></a></td>
+        <td class="jive-icon-label"><a id="jive-reply-thread" href="reply.jsp?id=<%=id%>&rootId=<%=rootId%>">回复本主题</a> </td>
       </tr>
       </tbody>
     </table>
@@ -87,6 +91,12 @@
         <div class="jive-message-list">
           <div class="jive-table">
             <div class="jive-messagebox">
+              <%
+                  for(int i=0; i<articleList.size();i++){
+                      Article article = articleList.get(i);
+                      String floor = i == 0 ? "楼主" : i+"楼";
+              %>
+              <!--start-->
               <table summary="Message" border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tbody>
                 <tr id="jive-message-780144" class="jive-odd" valign="top">
@@ -123,15 +133,15 @@
                     <tbody>
                     <tr valign="top">
                       <td width="1%"></td>
-                      <td width="97%"><span class="jive-subject"> 父贴</span> </td>
+                      <td width="97%"><span class="jive-subject"><%=floor%>:<%=article.getTitle()%></span> </td>
                       <td class="jive-rating-buttons" nowrap="nowrap" width="1%"></td>
                       <td width="1%"><div class="jive-buttons">
                         <table border="0" cellpadding="0" cellspacing="0">
                           <tbody>
                           <tr>
                             <td>&nbsp;</td>
-                            <td class="jive-icon"><a href="http://bbs.chinajavaworld.com/post%21reply.jspa?messageID=780144" title="回复本主题"><img src="images/reply-16x16.gif" alt="回复本主题" border="0" height="16" width="16"></a> </td>
-                            <td class="jive-icon-label"><a href="http://bbs.chinajavaworld.com/post%21reply.jspa?messageID=780144" title="回复本主题">回复</a> </td>
+                            <td class="jive-icon"><a href="reply.jsp?id=<%=article.getId()%>&rootId=<%=article.getRootId()%>" title="回复本主题"><img src="images/reply-16x16.gif" alt="回复本主题" border="0" height="16" width="16"></a> </td>
+                            <td class="jive-icon-label"><a href="reply.jsp?id=<%=article.getId()%>&rootId=<%=article.getRootId()%>" title="回复本主题">回复</a> </td>
                           </tr>
                           </tbody>
                         </table>
@@ -157,6 +167,10 @@
                 </tr>
                 </tbody>
               </table>
+            <%
+               }
+            %>
+            <!--end-->
             </div>
           </div>
         </div>
@@ -168,8 +182,8 @@
               <td align="center" width="98%"><table border="0" cellpadding="0" cellspacing="0">
                 <tbody>
                 <tr>
-                  <td><a href="http://bbs.chinajavaworld.com/forum.jspa?forumID=20"><img src="images/arrow-left-16x16.gif" alt="返回到主题列表" border="0" height="16" hspace="6" width="16"></a> </td>
-                  <td><a href="http://bbs.chinajavaworld.com/forum.jspa?forumID=20">返回到主题列表</a> </td>
+                    <td><a href="<%=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()%>/article_falt.jsp"><img src="images/arrow-left-16x16.gif" alt="返回到主题列表" border="0" height="16" hspace="6" width="16"></a> </td>
+                    <td><a href="<%=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()%>/article_flat.jsp">返回到主题列表</a> </td>
                 </tr>
                 </tbody>
               </table></td>
